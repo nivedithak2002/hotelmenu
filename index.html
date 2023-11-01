@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="s1.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="mystyles.html"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <title>Food</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .head{
+        height: 70px;
+        width: 100%;
+        /* border:solid; */
+        display: flex;
+        background-color: rgba(242, 10, 68, 0.408);
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        
+        
+       
+    }
+    body{
+        background-image: url(bg2.jpg);
+    }
+    .head img{
+        width:5%;
+        border-radius: 50%;
+    }
+    .head ul{
+        top: 20px;
+        position: absolute;
+        width: 600px;
+        display: flex;
+         list-style-type: none;
+         align-items: center;
+         justify-content: space-between;
+         backdrop-filter: blur(5px);
+         
+         right: 10px;   
+        
+    }
+    *{
+        margin-top: 0px;
+    }
+    .head ul:hover a{
+        color: rgba(24, 7, 214, 0.908);
+    }
+    .head a{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgba(15, 14, 15, 0.877);
+    }
+    .head a:hover{
+        color: rgba(236, 10, 10, 0.404);
+    }
+    .head li:hover a{
+        color: rgb(212, 4, 94);
+    }
+    .div image{
+        height: 100px;
+        width: 100px;
+    }
+    .c1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel-inner img{
+        width: 80%;
+        height: 700px;
+        
+    }
+    .home{
+        margin:10px 0px 0px 200px;
+    }
+    /* body{
+        background-color: black;
+    } */
+    .carousel-control-next-icon{
+        position: relative;
+        right: 190px;
+    }
+     .recent .rece_img .a1 {
+       height: 203px;
+       width: 203px;
+        /* display:flex; */
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        box-shadow:8px 9px 8px ; 
+    }
+    .recent1 .rece1_img .b1{
+        height: 203px;
+       width: 203px;
+        /* display:flex; */
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap; 
+        box-shadow:8px 9px 8px ;
+    }
+    .recent2 .rece2_img .b1{
+        height: 203px;
+       width: 203px;
+        /* display:flex; */
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap; 
+        box-shadow:8px 9px 8px ;
+    }
+    /* .recent3 .rece2_img .c1{
+        height: 203px;
+       width: 203px;
+        display:block;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;  
+    } */
+.a1:hover{
+  
+    border-radius: 30%;
+}
+.b1:hover{
+    border-radius: 30%;
+}
+span{
+    font-size: 30px;
+    text-align: center;
+}
+.icon {
+
+    margin-left: 500px;
+}
+.z1:hover{
+    border-radius: 20%;
+   transform: rotate(360deg);
+   height:70px;
+   width: 70px;
+   transition: all 3s ease;
+}
+.a1:hover{
+    border-radius: 20%;
+   transform: rotate(360deg);
+   height: 200px;
+   width: 180px;
+   transition: all 3s ease;
+}
+.recent1 .rece1_img .b1:hover{
+    border-radius: 20%;
+   
+   height: 200px;
+   width: 200px;
+   
+}
+.recent2 .rece2_img .b1:hover{
+    border-radius: 50%;
+    padding: 10px;
+   
+   height: 200px;
+   width: 200px;
+ 
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="head">
+<img src="download.jfif" alt="">
+<ul>
+    <li><a href="#home_home">Home</a></li>
+    <li><a href="#recent_img">Break Fast</a> </li>
+    <li><a href="#top_img">Snacks & jucies</a></li>
+    <li><a href="#upcome_img">Non Veg</a></li>
+    
+</ul>
+    </header>
+    
+<div> </h1></div>
+<div class="home" id="home_home"><h1></h1>
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="main.jpg" class="d-block" alt="..." height="700px" width="700px">
+      </div>
+      <div class="carousel-item">
+        <img src="immmg.avif" class="d-block" alt="..." height="700px" width="700px">
+      </div>
+      <div class="carousel-item">
+        <img src="3f18926a9ba120b5b7995c234dd4eca0.avif" class="d-block" alt="..." height="700px" width="70%">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+
+<br>
+
+  <div class="recent" id="recent_img">
+    <div class="rece_img"><h1 style="color: white;">Break Fast:</h1><br>
+    
+
+    <img src="b1.jfif" alt="" height="200px" width="170px" class="a1" >
+    <img src="b2.jfif" alt=""height="200px" width="170px" class="a1" >
+    <img src="b3.jfif" alt=""height="200px" width="170px" class="a1" >
+    <img src="b4.jfif" alt=""height="200px" width="170px"class="a1"  >
+    <img src="b5.avif" alt="" height="200px" width="170px"class="a1"  >
+    <img src="b6.avif" alt="" height="200px" width="170px" class="a1" ><br><br>
+    <img src="b7.avif" alt="" height="200px" width="170px" class="a1" >
+    <img src="b8.avif" alt=""height="200px" width="170px" class="a1"  >
+    <img src="b9.avif" alt=""height="200px" width="170px" class="a1"  >
+    <img src="b10.avif" alt=""height="150px" width="200px" class="a1"  >
+    <img src="b11.jfif" alt=""height="200px" width="150px" class="a1" >
+    <img src="b12.jfif" alt="" height="200px" width="170px"class="a1"  ><br></div>
+</div>
+   
+<br>
+<div class="recent1" id="top_img">
+    <div class="rece1_img">
+        <h1 style="color: white;">Snacks & Juices</h1><br>
+        
+
+
+    <img src="j5.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="s1.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="j2.jfif" alt=""height="200px" width="170px" class="b1">
+    <img src="s2.jfif" alt=""height="200px" width="170px" class="b1">
+    <img src="ss1.gif" alt="" height="200px" width="170px" class="b1">
+    <img src="j3.jfif" alt="" height="200px" width="170px" class="b1"><br><br>
+    <img src="j7.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="s4.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="j9.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="s8.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="j10.gif" alt="" height="200px" width="170px" class="b1">
+    <img src="s10.jfif" alt="" height="200px" width="170px" class="b1"><br>
+    <br><br>
+    </div>
+</div>
+
+   
+<div class="recent2" id="upcome_img">
+    <div class="rece2_img">
+        <h1 style="color: white;">Non Veg:</h1><br>
+        
+
+
+    <img src="n1.jfif" alt=""height="200px" width="170px" class="b1">
+    <img src="n4.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="n7.jfif" alt=""height="200px" width="170px" class="b1">
+    <img src="n6.jfif" alt=""height="200px" width="170px" class="b1">
+    <img src="n2.gif" alt="" height="200px" width="170px" class="b1">
+    <img src="n3.jfif" alt="" height="200px" width="170px" class="b1"><br><br>
+    <img src="n5.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="n9.jfif" height="200px" width="170px" class="b1">
+    <img src="n8.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="n11.jfif" alt="" height="200px" width="170px" class="b1">
+    <img src="n12.gif" alt="" height="200px" width="170px" class="b1">
+    <img src="n10.jfif" alt="" height="200px" width="170px" class="b1"><br><br>
+    </div>
+</div>
+<br>
+
+<br>
+<div class="ins" id="insta"><h1 style="color: aquamarine;" >About:</h1>
+    <p style="color: antiquewhite; font-size: 20px;">An online food ordering system allows your business to accept and manage orders placed online for delivery or takeaway. Customers browse a digital menu, either on an app or website and place and pay for their order online. Venues will then receive the order details via their chosen online food ordering system and produce the order ready for delivery or customer pickup. 
+
+        While online food ordering systems have been around for several years, demand for this technology took off during the pandemic. With extended lockdowns and restrictions, hospitality venues quickly pivoted their businesses to offer online ordering solutions so their customers could continue to enjoy restaurant-quality food at home.</p>
+    <span style="color: pink;">&hearts;LIVE,LOVE,EAT&hearts;</span></div>
+    <br>
+<div class="icon">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    <!-- <a href="#" class="fa fa-instagram">                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </a> 
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-whatsapp"></a> -->
+       
+       <div class="mar" style="color: rgb(45, 250, 137);font-size:xx-large ;"> <marquee behavior="alternate" direction="">Thank You For Visiting</marquee></div>
+
+      
+</div> 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
